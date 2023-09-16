@@ -50,4 +50,5 @@
 # Credits
 
 * Alex (Me)
+* Dan Pease for the assist on multi-job support
 * KLM for the original ox_lib part

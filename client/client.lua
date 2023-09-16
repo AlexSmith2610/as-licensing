@@ -46,7 +46,7 @@ RegisterNetEvent("as-licensing:licensingmenu", function()
         local license = lib.inputDialog('Alcohol Licensing', {
             {type = 'input', label = 'Business Name', required = true, icon = 'shopping-cart'},
             {type = 'input', label = 'License Owner', required = true, icon = 'id-card'},
-            {type = 'input', label = 'Expiry Date',   required = false, icon = 'hourglass-start'},
+            {type = 'input', label = 'Expiry Date',   required = true, icon = 'hourglass-start'},
         })
         if not license then return end
 

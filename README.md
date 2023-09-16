@@ -4,6 +4,7 @@
 
 * **Input Business Name** - This allows your chosen job to input the business name for the license.
 * **Input License Holder Name** - This allows your chosen job to input the license holder name for the license.
+* **Input Expiry Date** - This allows your chosen job to input the expiry date for the license.
 * **Simple Chat Command** - You can choose between a chat command and a ped to open the interaction menus!
 * **Job-Locked Command** - Select the job to lock it to. Multiple job support coming soon!
 

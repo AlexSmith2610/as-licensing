@@ -26,7 +26,7 @@ RegisterNetEvent("as-licensing:licensingmenu", function()
                 isRequired = true,
             },
         }
-    })
+    }) 
 
     if licenseResult ~= nil then
         if not licenseResult.busName == nil then
@@ -72,7 +72,14 @@ if Config.TriggerType == "cmd" then
     RegisterCommand('licensing', function()
         local Player = QBCore.Functions.GetPlayerData()
         local jobName = Player.job.name
-        if jobName == Config.LicensingJobs then
+        local isInLicensingJobs = false
+        for _, v in pairs(Config.LicensingJobs) do
+            if v == jobName then
+                isInLicensingJobs = true
+                break
+            end
+        end
+        if isInLicensingJobs == true then
             TriggerEvent("as-licensing:licensingmenu")
         else
             QBCore.Functions.Notify('You are not allowed to do that!', 'primary')
